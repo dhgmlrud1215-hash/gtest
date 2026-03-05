@@ -1,0 +1,64 @@
+@charset "utf-8";
+
+*,*:after, *:before {box-sizing: border-box;}
+
+
+h1 { width:auto; display: flex; justify-content: center; margin-top: 40px;}
+h1 img {width: 100%;}
+#banner {width: 100%; overflow: hidden; position: relative;}
+#banner ul {width: 300%;position: relative; }
+#banner ul li {width: 33.33%; margin-top: 10px; float: left;}
+#banner ul li img {width: 100%;}
+
+.b2 {display: none;}
+
+#best {text-align: center;}
+span {color: green;}
+h2{text-align: center; margin: 30px; font-size: 1.5rem; font-weight: bold;}
+.bgroup {display: flex; justify-content: center; 
+text-align: center; width: 100%;}
+.bgroup ul { display: flex; flex-wrap: wrap; justify-content: center;}
+.bgroup ul li {width: 50%; text-align: center; }
+.bgroup img {width: 100%; margin-bottom: 20PX; }
+
+button {background: none; border: none; margin: 40px;}
+button a {text-decoration: none; color: green; border: 1px solid green;
+    padding: 10px 40px;}
+
+#sns h2 {margin-bottom: 50px;}
+#sns ul {display: flex; flex-wrap: wrap; justify-content: center}
+#sns ul li {width: 50%;}
+#sns img {width: 100%;}
+
+#footer {background:rgb(42, 102, 42); width: 100%; margin-top: 50px;
+padding: 20px 0;}
+#footer ul {display: flex; justify-content: center;}
+#footer ul li {width: 20px;}
+#footer img {width: 100%;}
+
+#idc {width: 4.5rem; height: 0.8rem; position: absolute;
+    bottom: 1.5rem; left: 50%; margin-left: -2.25rem; }
+#idc>div {float: left; opacity: 0.6;}
+#idc>div.idc_on {opacity: 1;}
+#idc div:nth-child(2) {margin: 0 0.75rem;}
+#idc div a {display: block; width: 0.8rem; height: 0.8rem;
+            border-radius: 0.6rem; background: #000;}
+
+
+@media screen and (min-width:740px) {
+    .b1 {display: none;}
+    .b2 {display: block;}
+    .bgroup ul { justify-content: flex-start; margin-left: 80px;}
+    .bgroup ul li {width: 30%;}
+    #sns ul li {width: 30%; }
+   
+}
+
+@media screen and (min-width:1024px) {
+    .b1 {display: none;}
+    .b2 {display: block;}
+    .bgroup ul {position: relative; left: 80px;}
+    .bgroup ul li {width: 20%; }
+    #sns ul { justify-content: flex-start;}
+    #sns ul li {width: 25%;}
+}
