@@ -1,0 +1,51 @@
+@charset "utf-8";
+
+body {font-family: "Noto Sans", sans-serif;}
+
+*,*:after, *:before {box-sizing: border-box;}
+
+body {font-family: "Noto Sans", sans-serif; display: flex; 
+    justify-content: center; }
+
+#join_mem {padding: 0 5px; width:50%; height: 50%;
+           position: absolute;left:50%; top:30%;
+           transform: translate(-50%,-50%);}
+
+.logo h1 {letter-spacing: 0.1rem; font-size: 3.5rem; 
+display: flex; justify-content: center; } 
+.logo h1 span {color: rgba(63, 91, 216, 0.75)}
+.banner img {width:100%;height: auto; display: block;
+margin-bottom: 20px; }
+
+
+form {display: flex; flex-direction: column;align-items: center;}
+legend {display: block; text-align: center; margin-bottom: 20px; 
+    font-size: 1.25rem; font-weight: 500; }
+
+.box {border: 1px solid black; border-radius: 15px; padding: 20px;
+font-size: 0.9375rem; width: 400px;margin-bottom: 20px; font-weight: 400; }
+
+.box .required {color: red;}
+
+.box p {margin-bottom: 20px;}
+
+.idgroup {margin-bottom: 20px;}
+.group {display: flex; align-items: center;  gap: 10px; width: 100%; }
+.group img {width: 50px; height: 40px;margin-top: 5px;}
+
+input {display: block; width: 100%;  border-radius: 5px;
+margin-top: 5px; border: 1px solid black; height: 40px; 
+font-size: 0.9375rem; padding-left: 5px; color:#000; }
+
+#button {display: flex; justify-content: center; width: 100%; 
+gap: 30px; align-content: center;  height:40px;
+margin-top: 10px;}
+#button input { cursor:pointer; }
+
+.btn {border: none; background: #3F5BD8; color: #fff;
+transition: background 0.3s;}
+.btn:hover {background: #354bb5; color: #fff;}
+
+.reset {border: none; background: #f2f2f2; color: #000;
+transition: background 0.3s;}
+.reset:hover {background: #e0e0e0; color: #000;}
